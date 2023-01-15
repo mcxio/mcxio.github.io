@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+	<title>卡密</title>
+
+    <link href="ifont.ttc" rel="stylesheet" type="text/css">
+
+</head>
+
+   <style>
+
+    .lan{
+
+       height:13px;
+
+       width:3px;
+
+       border-radius:10px;
+
+       background-color:#1e9fff;
+
+       
+
+       }
+
+     @font-face {
+
+  font-family: 'ifont';
+
+  src: url('ifont.ttc') format('truetype');
+
+}
+
+button{
+
+  font-family: 'ifont', sans-serif;
+
+}
+
+div{
+
+  font-family: 'ifont', sans-serif;
+
+}
+
+button:hover {
+
+    opacity: 1;
+
+}
+
+button:active {
+
+    background-color: #00BFFF;
+
+    
+
+}
+
+ .o{
+
+   height:70px;
+
+   width:150px;
+
+   border-radius:10px;
+
+   background-color:#F2F3F5;
+
+   border:0px solid;
+
+   }
+
+ .oo{
+
+   height:70px;
+
+   width:340px;
+
+   border-radius:10px;
+
+   background-color:#F2F3F5;
+
+   border:0px solid;
+
+   
+
+   }
+
+  .os{
+
+   height:70px;
+
+   width:150px;
+
+   border-radius:10px;
+
+   background-color:#F2F3F5;
+
+   border:0px solid;
+
+   transform:translate(36px,0px);
+
+   
+
+   }
+
+ .cen{
+
+   text-align:center;
+
+   }
+
+  .put{
+
+    background-color:#F2F3F5;
+
+    border:0px solid;
+
+    width:200px;
+
+    transform:translate(0px,10px);
+
+    }
+
+  .iput{
+
+    background-color:#F2F3F5;
+
+    border:0px solid;
+
+    width:210px;
+
+    height:40px;
+
+    margin:0 auto;
+
+    border-radius:15px;
+
+    }
+
+  .but{
+
+    background-color:#1e9fff;
+
+    color:#fff;
+
+    border:0px solid;
+
+    width:40px;
+
+    height:35px;
+
+    margin:0 auto;
+
+    border-radius:12px;
+
+    transform:translate(80px,-53.5px);
+
+    }
+
+  .modal {
+
+    display: none; /* Hidden by default */
+
+    position: fixed; /* Stay in place */
+
+    z-index: 1; /* Sit on top */
+
+    padding-top: 100px; /* Location of the box */
+
+    left: 0;
+
+    top: 0;
+
+    width: 100%; /* Full width */
+
+    height: 100%; /* Full height */
+
+    overflow: auto; /* Enable scroll if needed */
+
+    background-color: rgb(0,0,0); /* Fallback color */
+
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+
+}
+
+/* Modal Content */
+
+.modal-content {
+
+    background-color: #fefefe;
+
+    margin: auto;
+
+    padding: 20px;
+
+    border: 1px solid #888;
+
+    width: 80%;
+
+}
+
+/* The Close Button */
+
+.close {
+
+    color: #aaaaaa;
+
+    float: right;
+
+    font-size: 28px;
+
+    font-weight: bold;
+
+}
+
+.close:hover,
+
+.close:focus {
+
+    color: #000;
+
+    text-decoration: none;
+
+    cursor: pointer;
+
+}
+
+   </style>
+
+<body>
+
+ 	<script type="text/javascript">
+
+		function change(){
+
+			document.getElementById("content").innerHTML='<div style="margin:0 auto;border:0px solid;width:340px;height:70px;transform:translate(0px,0px);" id="content"><button class="oo"><p style="transform:translate(0px,-5px);color:grey;width:200px;">只能解锁音乐下载专属昵称</p><h6 style="transform:translate(-5px,-14px);color:#1e9fff;font-size:10px;width:70px;">￥10</h6></button></div>';
+
+		}
+
+	</script>
+
+ 	<script type="text/javascript">
+
+		function change1(){
+
+			document.getElementById("content").innerHTML='<div style="margin:0 auto;border:0px solid;width:340px;height:70px;transform:translate(0px,0px);" id="content"><button class="oo"><p style="transform:translate(0px,-5px);color:grey;width:200px;">能解锁低员带会员动听音乐</p><h6 style="transform:translate(-5px,-14px);color:#1e9fff;font-size:10px;width:70px;">￥16</h6></button></div>';
+
+		}
+
+	</script>
+
+  	<script type="text/javascript">
+
+		function change2(){
+
+			document.getElementById("content").innerHTML='<div style="margin:0 auto;border:0px solid;width:340px;height:70px;transform:translate(0px,0px);" id="content"><button class="oo"><p style="transform:translate(0px,-5px);color:grey;width:200px;">解锁低员高员带专属会员头</p><h6 style="transform:translate(-5px,-14px);color:#1e9fff;font-size:10px;width:70px;">￥29</h6></button></div>';
+
+		}
+
+	</script>
+
+  	<script type="text/javascript">
+
+		function change3(){
+
+			document.getElementById("content").innerHTML='<div style="margin:0 auto;border:0px solid;width:340px;height:70px;transform:translate(0px,0px);"><button id="myBtn1" class="oo"><p style="transform:translate(5px,-5px);color:grey;width:200px;">解锁低员高员满员带顶级会员</p><h6 style="transform:translate(-5px,-14px);color:#1e9fff;font-size:10px;width:70px;">￥38</h6></button></div>';
+
+		}
+
+	</script>
+
+ 
+
+     <div style="margin:0 auto;border:0px solid;width:340px;height:70px;">
+
+    <div class="lan"></div><h4 style="font-size:15px;transform:translate(8px,-34px);">会员类型</h4></div>
+
+      <div style="margin:0 auto;border:0px solid;width:340px;height:70px;transform:translate(0px,-26px);">
+
+	<button onclick="change()" class="o">
+
+   <h4 style="transform:translate(0px,-10px);color:grey;width:70px;">低级会员</h4>
+
+    <p style="transform:translate(-3px,-14px);color:grey;font-size:10px;width:70px;">期限:10天</p>
+
+ </button>
+
+    <button onclick="change1()" class="os">
+
+   <h4 style="transform:translate(0px,-10px);color:grey;width:70px;">高级会员</h4>
+
+    <p style="transform:translate(-3px,-14px);color:grey;font-size:10px;width:70px;">期限:20天</p>
+
+ </button>
+
+  <br><br>
+
+ 	<button onclick="change2()" class="o">
+
+   <h4 style="transform:translate(0px,-10px);color:grey;width:70px;">满级会员</h4>
+
+    <p style="transform:translate(-3px,-14px);color:grey;font-size:10px;width:70px;">期限:35天</p>
+
+ </button>
+
+    <button onclick="change3()" class="os">
+
+   <h4 style="transform:translate(0px,-10px);color:grey;width:70px;">顶级会员</h4>
+
+    <p style="transform:translate(-3px,-14px);color:grey;font-size:10px;width:70px;">期限:45天</p>
+
+ </button>
+
+ 
+
+ </div>
+
+ <br><br><br>
+
+     <div style="margin:0 auto;border:0px solid;width:340px;height:70px;transform:translate(0px,30px);">
+
+    <div class="lan"></div><h4 style="font-size:15px;transform:translate(8px,-34px);">购买卡密</h4></div>
+
+ </div>
+
+ <br>
+
+  <div style="margin:0 auto;border:0px solid;width:340px;height:70px;transform:translate(0px,-26px);" id="content">
+
+	<button id="myBn" class="oo">
+
+   <p style="transform:translate(-5px,-5px);color:grey;width:170px;">未选中任何会员类型</p>
+
+    <h6 style="transform:translate(19px,-14px);color:#1e9fff;font-size:10px;width:10px;">￥0</h6>
+
+ </button<>
+
+</div>
+
+  <div style="margin:0 auto;border:0px solid;width:340px;height:70px;transform:translate(0px,0px);">
+
+    <div class="lan"></div><h4 style="font-size:15px;transform:translate(8px,-34px);">卡密解锁</h4></div>
+
+ </div>
+
+  <div class="cen">
+
+   <div class="iput">
+
+     <input type="text" placeholder=" ￴ ￴ ￴   ￴ ￴ ￴ ￴￴ ￴低级卡密输入框" class="put"/></div>
+
+     <br>
+
+      <button class="but">获取</button>
+
+  </div>
+
+  
+
+  <div class="cen" style="transform:translate(0px,-40px);">
+
+   <div class="iput">
+
+     <input type="text" placeholder=" ￴ ￴ ￴   ￴ ￴ ￴ ￴￴ ￴高级卡密输入框" class="put"/></div>
+
+     <br>
+
+      <button class="but">获取</button>
+
+  </div>
+
+  
+
+  <div class="cen" style="transform:translate(0px,-80px);">
+
+   <div class="iput">
+
+     <input type="text" placeholder=" ￴ ￴ ￴   ￴ ￴ ￴ ￴￴ ￴满级卡密输入框" class="put"/></div>
+
+     <br>
+
+      <button class="but">获取</button>
+
+  </div>
+
+  
+
+  <div class="cen" style="transform:translate(0px,-120px);">
+
+   <div class="iput">
+
+     <input type="text" placeholder=" ￴￴ ￴ ￴ ￴   ￴ ￴ ￴  ￴顶级卡密输入框" class="put"/></div>
+
+     <br>
+
+      <button class="but">获取</button>
+
+  </div>
+
+  <div class="cen">
+
+<button id="myBtn" style="transform:translate(0px,-530px);height:70px;width:325px;border:0px solid;background-color:transparent;"> ￴</button>
+
+</div>
+
+  <div id="myModal" class="modal">
+
+  <!-- Modal content -->
+
+  <div class="modal-content">
+
+    <span class="close">&times;</span>
+
+    <img src="./img/zf10.png" alt="图片" width="100%">
+
+  </div>
+
+</div>
+
+<script>
+
+// Get the modal
+
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+
+btn.onclick = function() {
+
+  modal.style.display = "block";
+
+}
+
+// When the user clicks on <span> (x), close the modal
+
+span.onclick = function() {
+
+  modal.style.display = "none";
+
+}
+
+// When the user clicks anywhere outside of the modal, close it
+
+window.onclick = function(event) {
+
+  if (event.target == modal) {
+
+    modal.style.display = "none";
+
+  }
+
+}
+
+</script>
+
+</body>
+
+</html>的
