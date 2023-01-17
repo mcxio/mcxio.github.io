@@ -1,6 +1,6 @@
 
         let put1 = "XJ_Q13856";
-        let put2 = "GJ_Q1;
+        let put2 = "GJ_Q16761;
         let put3 = "MJ_A23943";
         let put4 = "DJ_A56986";
         let count = 0;
