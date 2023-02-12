@@ -20,7 +20,6 @@ document.getElementById("go").innerHTML = `
 
 </div>`;
 
-</script>
 
 
 
