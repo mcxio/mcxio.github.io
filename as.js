@@ -1,4 +1,4 @@
-
+        document.getElementById("zx").innerHTML = "最新版本:1.5.60";
         let put1 = "XJ_Q13856";
         let put2 = "GJ_Q16761";
         let put3 = "MJ_A23943";
