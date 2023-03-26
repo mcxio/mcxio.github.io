@@ -275,7 +275,7 @@
 			var userInput = document.getElementById("userinput").value;
 			var chatlog = document.getElementById("chatlog");
 			var userMsg = '<div style="border-radius:5px;background-color:#;box-shadow:0 0px 3px rgba(0,0,0,0.2); overflow-y: scroll;"><br><div style="width: 95vw; margin-left:calc(50% - 50vw);margin-right: calc(50% - 50vw);margin: 0 auto; z-index: 9999;display: flex;">我：' + userInput + "<br><br></div></div>";
-            var botMsg = '<div style="border-radius:5px;background-color:#;box-shadow:0 0px 3px rgba(0,0,0,0.2); overflow-y: scroll;"><br><div style="width: 95vw; margin-left:calc(50% - 50vw);margin-right: calc(50% - 50vw);margin: 0 auto; z-index: 9999;display: flex;">HotRobot：' + chatbot.reply(userInput) + "<br><br></div></div>";					
+            var botMsg = '<div style="border-radius:5px;background-color:#;box-shadow:0 0px 3px rgba(0,0,0,0.2); overflow-y: scroll;"><br><div style="width: 95vw; margin-left:calc(50% - 50vw);margin-right: calc(50% - 50vw);margin: 0 auto; z-index: 9999;display: flex;">ChatRobot：' + chatbot.reply(userInput) + "<br><br></div></div>";					
             	chatlog.innerHTML += '<div style="border-radius:5px;width: 95vw; margin-left:calc(50% - 50vw);margin-right: calc(50% - 50vw);margin: 0 auto;">' + userMsg + "<br>" + botMsg + "<br></div>";
       document.getElementById("userinput").value = "";
 		}
